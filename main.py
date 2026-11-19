@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 # load variables from .env
 load_dotenv()
 MONGODB_URI = os.getenv("MONGODB_URI")
-MONGODB_DB = os.getenv("MONGODB_DB", "cs3720db")
+MONGODB_DB = os.getenv("MONGODB_DB", "cs3720")
 PORT = int(os.getenv("PORT", "8000"))
 
 client = MongoClient(MONGODB_URI)
